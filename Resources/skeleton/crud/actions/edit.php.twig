@@ -1,4 +1,3 @@
-
     /**
 {% block phpdoc_method_header %}
      * Displays a form to edit an existing {{ entity }} entity.
@@ -48,12 +47,12 @@
 
 {% block form %}
     /**
-    * Creates a form to edit a {{ entity }} entity.
-    *
-    * @param {{ entity_class }} $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    */
+     * Creates a form to edit a {{ entity }} entity.
+     *
+     * @param {{ entity_class }} $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
     private function createEditForm({{ entity_class }} $entity)
     {
         $form = $this->createForm(new {{ entity_class }}Type(), $entity, array(
